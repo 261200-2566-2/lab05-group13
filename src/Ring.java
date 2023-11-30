@@ -4,7 +4,8 @@ public class Ring extends Accessories implements Accessory {
     }
 
     @Override
-    public void giveEffect() {
-
-    }
+        public void giveEffect(Character1 player) {
+            player.dexterity += 10;
+            player.stamina += 10;
+        }
 }

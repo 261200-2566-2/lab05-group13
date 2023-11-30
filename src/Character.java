@@ -1,5 +1,5 @@
 public class Character {
-    // Character attributes
+    protected String name;
     protected int level;
     protected int maxHp;
     protected int maxMana;

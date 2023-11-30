@@ -1,4 +1,3 @@
 public interface Accessory {
-    void giveEffect();
-
+    void giveEffect(Character1 p);
 }

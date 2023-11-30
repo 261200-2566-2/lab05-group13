@@ -1,32 +1,11 @@
-public class Shield {
+public class Shield extends Accessories implements Accessory {
 
-    // Shield attributes
-    private double baseDefense;
-    private double defense;
-    private int level;
-
-    public Shield() {
-        this.baseDefense = 100;
-        this.level = 1;
-        updateDefense();
+    public Shield(String name, String type, String effect) {
+        super(name, type, effect);
     }
 
-    public void levelUp() {
-        level++;
-        updateDefense();
+    @Override
+    public void giveEffect(Character1 player) {
+        player.hp += 50; // example
     }
-
-    private void updateDefense() {
-        defense = baseDefense * (1 + 0.05 * level);
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public double getDefense() {
-        return defense;
-    }
-}
-{
 }

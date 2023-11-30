@@ -4,7 +4,8 @@ public class Necklace extends Accessories implements Accessory {
     }
 
     @Override
-    public void giveEffect() {
-
+    public void giveEffect(Character1 player) {
+        player.hp += 10; // example
+        player.dex -= 10;
     }
 }

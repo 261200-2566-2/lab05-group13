@@ -1,30 +1,11 @@
-public class Sword {
+public class Sword extends Accessories implements Accessory {
 
-    // Sword attributes
-    private double baseDamage;
-    private double damage;
-    private int level;
-
-    public Sword() {
-        this.baseDamage = 100;
-        this.level = 1;
-        updateDamage();
+    public Sword(String name, String type, String effect) {
+        super(name, type, effect);
     }
 
-    public void levelUp() {
-        level++;
-        updateDamage();
-    }
-
-    private void updateDamage() {
-        damage = baseDamage * (1 + 0.1 * level);
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public double getDamage() {
-        return damage;
+    @Override
+    public void giveEffect(Character1 player) {
+        player.hp += 100; // example
     }
 }
