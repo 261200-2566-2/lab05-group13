@@ -1,12 +1,6 @@
-public class Ring implements Accessories {
-    @Override
-    public void equip() {
-
-    }
-
-    @Override
-    public void unEquip() {
-
+public class Ring extends Accessories implements Accessory {
+    public Ring(String name, String type, String effect) {
+        super(name, type, effect);
     }
 
     @Override

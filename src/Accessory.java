@@ -1,4 +1,4 @@
-public class Accessory {
-    private String name, type, effect;
+public interface Accessory {
+    void giveEffect();
 
 }

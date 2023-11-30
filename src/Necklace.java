@@ -1,13 +1,6 @@
-public class Necklace implements Accessories {
-
-    @Override
-    public void equip() {
-
-    }
-
-    @Override
-    public void unEquip() {
-
+public class Necklace extends Accessories implements Accessory {
+    public Necklace(String name, String type, String effect) {
+        super(name, type, effect);
     }
 
     @Override
