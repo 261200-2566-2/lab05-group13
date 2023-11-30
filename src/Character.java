@@ -12,6 +12,7 @@ public class Character {
 
     Sword equippedSword = new Sword();
     Shield equippedShield = new Shield();
+
     public Character() {
         this.level = 1;
         this.maxHp = 100 + 10 * level;
