@@ -1,8 +1,8 @@
 public interface Humanoid {
     public void levelUp();
-    public void attack();
-    public void beAttack();
-    public void calDmg();
-    public void getHP();
-    public void getMana();
+    public void attack(Humanoid opponent);
+    public void beAttack(double dmg);
+    public double calDmg(Character1 Attacker);
+    public double getHP();
+    public double getMana();
 }

@@ -6,4 +6,6 @@ public class Accessories {
         this.type = type;
         this.effect = effect;
     }
+
+
 }

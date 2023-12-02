@@ -1,4 +1,3 @@
-public interface Human extends Humanoid {
+public  interface Human extends Humanoid {
 
- 
 }
